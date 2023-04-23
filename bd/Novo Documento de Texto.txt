@@ -1,0 +1,60 @@
+CREATE DATABASE controloFinanceiro;
+USE controloFinanceiro;
+
+CREATE TABLE gastos(
+id_Gasto INT PRIMARY KEY AUTO_INCREMENT,
+valor_Gasto INT,
+comentar_Gasto TEXT,
+data_Gasto DATE,
+hora_Gasto TIME,
+total_Dinheiro INT,
+mes_Gasto INT(2), 
+ano_Gasto INt(4)
+#total_Gasto INT
+#FOREIGN KEY (total_Dinheiro) REFERENCES dinheiros (total_Dinheiro)
+);
+#INSERT INTO gastos (id_Gasto, valor_Gasto, comentar_Gasto, data_Gasto, hora_Gasto) 
+#VALUES ('1', '0', 'Nenhum Gasto', '2022-12-16', '10:34:46','12', '2022');
+
+CREATE TABLE ganhos(
+id_Ganho INT PRIMARY KEY AUTO_INCREMENT, 
+valor_Ganho INT,
+comentar_Ganho TEXT,
+data_Ganho DATE,
+hora_Ganho TIME,
+total_Dinheiro INT,
+mes_Ganho INT(2), 
+ano_Ganho INt(4)
+#total_Ganho INT
+
+);
+#INSERT INTO ganhos (id_Ganho, valor_Ganho, comentar_Ganho, data_Ganho, hora_Ganho, mes_Ganho, ano_Ganho) 
+#VALUES ('1', '9850', 'Meu Dinheiro Actual', '2022-12-16', '10:34:46','12', '2022');
+
+CREATE TABLE dinheiros(
+id_Dinheiro INT PRIMARY KEY AUTO_INCREMENT,
+#id_Gasto INT,
+#id_Ganho INT,
+total_Dinheiro INT
+#FOREIGN KEY (id_Gasto) REFERENCES gastos (id_Gasto),
+#FOREIGN KEY (id_Ganho) REFERENCES ganhos (id_Ganho)
+);
+INSERT INTO dinheiros (id_Dinheiro, total_Dinheiro) 
+VALUES ('1', '27650');
+
+CREATE TABLE adm(
+id_Adm INT PRIMARY KEY AUTO_INCREMENT,
+nome_Adm varchar(25),
+senha_Adm varchar(5)
+);
+INSERT INTO adm (id_Adm, nome_Adm, senha_Adm) 
+VALUES ('1', 'Jacó Jorge Garcia','+2020');
+
+
+
+select SUM(valor_Ganho) from ganhos;
+
+select * from dinheiros;
+
+drop database controloFinanceiro;
+

@@ -1,0 +1,116 @@
+.tabela-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+    margin: 0 auto;
+width: 98%;
+    padding: 1rem;
+}
+.tabela-top .top{
+ 
+  
+}
+.top div{
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 1rem;
+   
+}
+
+
+.fa-toggle-left{
+    margin: 5px;
+    font-size: 3rem !important;
+    color: white !important;
+    background-color: rgb(37, 39, 39);
+}
+.fa-power-off{
+    margin: 5px;
+    font-size: 2rem !important;
+    color: skyblue;
+    margin-top: 5px;
+    background-color: rgb(37, 39, 39);
+    float: right;
+}
+.tabtop{
+    
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 90%;
+    color: #ffffff;
+}
+.tabtop th{
+  
+   background-color: rgba(135, 207, 235, 0.473);
+}
+.tabtop td{
+   
+    background-color: rgba(122, 122, 122, 0.536);
+ }
+input{
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border: none;
+    margin-left: 0.5rem;
+}
+.bt{
+    background-color: skyblue;
+    color: #ffffff;
+}
+.mais i{
+    color: rgb(93, 251, 93); 
+    font-size: 40px;
+}
+.menus i{
+    color: rgb(255, 95, 95);
+    font-size: 40px;
+}
+.kumbu p{
+   
+   
+    
+   
+}
+.kumbu i{
+   
+    color: rgb(255, 95, 95);
+    
+    font-size: 40px;
+}
+.addmais i{
+    margin-top: 2rem;
+  display: block;
+    color: skyblue;
+    border-radius: 50%;
+    text-align: center;
+   
+}
+.addmais i a{
+    color: skyblue;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 2px;
+}
+@media (max-width: 800px) {
+
+    .tabela-top h2{
+ 
+        align-items: center;
+        margin-top: 5px;
+      
+      text-align: center;
+        padding: 0rem;
+
+        font-size: 99%;
+    }
+    .tabtop {
+        width: 99%;
+      font-size: 99%;
+     }
+     .tabtop{
+    
+        
+    }
+
+}
